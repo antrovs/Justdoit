@@ -24,8 +24,8 @@ function setStyles(background,deg) {
     console.log(elmemGl)
     if (!background) {
         window.scrollTo({
-            top: 0,
-            left: 0,
+            top: 10,
+            left: 10,
             behavior: 'smooth'
           });
         elmemGl.style.color='black'
