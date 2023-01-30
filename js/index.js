@@ -5,10 +5,11 @@ function changeBackground(background) {
         break;
         
         case 'service':
-            setStyles("green",'360')
+            setStyles('rgba(241, 54, 54, 0.56)','360','170vh','0')
         break;
         
         case 'subscribe':
+            setStyles('none')
         break;
         
         case 'team':
@@ -18,22 +19,19 @@ function changeBackground(background) {
         break;
         }
 }
-function setStyles(background,deg) {
+function setStyles(background,deg,widht,disp) {
     let bgStyles = document.getElementById('background')
     let elmemGl = document.getElementById('gl1')
     console.log(elmemGl)
     if (!background) {
-        window.scrollTo({
-            top: 10,
-            left: 10,
-            behavior: 'smooth'
-          });
         elmemGl.style.color='black'
-        bgStyles.style.borderBottom='100vh solid red'
+        bgStyles.style.borderBottom='170vh solid rgba(153, 153, 153, 0.8)'
         bgStyles.style.transform='rotate(270deg)'
     } else {
         elmemGl.style.color='white' 
-        bgStyles.style.borderBottom=`100vh solid ${background}`
+        bgStyles.style.borderBottom=`${widht} solid ${background}`
         bgStyles.style.transform=`rotate(${deg}deg)`
+        (background === 'none') ? bgStyles.style.display = 'none' : 
     }
+
 }

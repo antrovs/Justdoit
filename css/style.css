@@ -1,3 +1,5 @@
+/*DEFAULT*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@
     scroll-behavior: smooth !important;
 }
  body {
-    background: linear-gradient(rgba(81, 81, 81, 0.259), rgba(0, 0, 0, 0.4)),url(../img/bg.png);
+    background: linear-gradient(rgba(81, 81, 81, 0.259), rgba(0, 0, 0, 0.1)),url(../img/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -22,22 +24,54 @@ p {
 h1,h2 { 
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/*ELEMENTS*/
+
 #background {
     top: 0;
     width: 0;
     height: 0;
     border: 0 solid transparent;
     border-right-width: 0px;
-    border-left-width: 100vw;
-    border-bottom: 100vh solid red;
+    border-left-width: 127vw;
+    border-bottom: 170vh solid rgba(153, 153, 153, 0.8);
     z-index: -100;
     position: fixed;
     transform: rotate(270deg);
-    transition: transform 20s ease-in-out;
+    transition: transform .7s ease-in-out;
 }
 .container { 
-    margin-top: 150px;
+    margin-top: 200px;
 }
+#scrollbtn {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    left: 1550px;
+    top: 850px;
+    background: rgba(214, 82, 86, 0.17);
+    mix-blend-mode: normal;
+    border: 2px solid #EB3F22;
+    -moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+    z-index: 1000;
+}
+i {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 9px;
+    margin-left: 25px;
+    margin-top: 22px;
+    
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    
+}
+/*MENU*/
 
 #navbar {
     width: 100%;
@@ -47,7 +81,6 @@ h1,h2 {
     text-align: center;
     position: fixed;
 }
-
 #navbar li {
     padding: 6% 0 6% 0;
     display: inline-block;
@@ -62,21 +95,95 @@ h1,h2 {
     color: #fff;
 }
 #navbar li:first-child a {
-    color: #000000
+    color: #000;
 }
 
-#navbar li a:hover {
+#navbar a:hover {
     padding-bottom: 5px;
     border-bottom: 3px solid #EB3F22;
 }
-#navbar li a:active {
+#navbar a:active {
     border-bottom: 3px solid #EB3F22;
 }
 
-.about {
-    text-shadow: 3px;
-}
-.carus { 
-    padding-left: 200px;
+/*DIV*/
+
+.carus {
     height: calc(100vh - 258px);
+    
+}
+.main {
+    height: max-content;
+    background: rgba(31, 31, 31, 0.7);
+    text-align: left;
+    padding-left: 0;
+    z-index: -100;
+    padding-top: -100px; 
+    width: 1100px;
+}
+.main p {
+    font-size: 18px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-top: 40px;
+    color: #fff;
+    padding-bottom: 100px;
+}
+.main h1 {
+    color:#fff;
+    padding-top: 50px;
+    padding-left: 50px;
+}
+.service {
+    height: calc(110vh - 258px);
+    z-index: -100;
+}
+.serv {
+    height: max-content;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    transform: translate(0%, 60%);
+    background: rgba(31, 31, 31, 0.7);
+    z-index: -900; 
+
+}
+.serv h1 {
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    color:#fff;
+
+}
+.serv p {
+    padding: 0 50px 45px 50px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    z-index: -100;
+}
+.subscribe {
+    height: calc(120vh - 258px);
+    z-index: -100;    
+}
+.subs {
+    height: max-content;
+    width: 60%;
+    margin-left: 20%;
+    text-align: center;
+    transform: translate(0%, 60%);
+    background: rgba(31, 31, 31, 0.7);
+    z-index: -900; 
+}
+.subs h1 {
+    padding: 25px 25px 25px 25px;
+    text-align: center;
+    color:#fff;
+
+}
+.subs p {
+    padding: 0 50px 45px 50px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    z-index: -100;
 }

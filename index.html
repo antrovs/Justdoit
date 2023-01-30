@@ -11,15 +11,16 @@
         <ul id="navbar">
             <li onclick="changeBackground('main')"><a id="gl1" href="#">Главная</a></li>
             <li onclick="changeBackground('service')"><a href="#ser">О сервисе</a></li>
-            <li><a href="#sub">Подписка</a></li>
+            <li onclick="changeBackground('subscribe')"></li><a href="#sub">Подписка</a></li>
             <li><a href="#gp">Команда</a></li>
             <li><a href="#ab">Контакты</a></li>
             <li><a href="app/enter.html">Вход</a></li>
         </ul>
         <div id="background"></div>
+        <div onclick="changeBackground('service')"><a id="scrollbtn" href="#ser"><i class="arrow down"></i></a></div>
     <div class="container">
-        <div id="mn" class="main">
-            <div class="carus">
+        <div id="mn" class="carus">
+            <div class="main">
                 <h1>Lorem Ipsum</h1>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -34,6 +35,7 @@
     </div>
     <div class="container">
         <div id="ser" class="service">
+            <div class="serv">
             <h1>Lorem Ipsuim</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -56,11 +58,13 @@
                 electronic typesetting, remaining essentially unchanged. It was popularised 
                 in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
                 and more recently with desktop publishing software like Aldus PageMaker including 
-                versions of Lorem Ipsum</p>  
+                versions of Lorem Ipsum</p>
+            </div>  
         </div>
     </div>
     <div class="container">
         <div id="sub" class="subscibe">
+            <div class="subs">
             <h1>Lorem Ipsuim</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -83,7 +87,8 @@
                 electronic typesetting, remaining essentially unchanged. It was popularised 
                 in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
                 and more recently with desktop publishing software like Aldus PageMaker including 
-                versions of Lorem Ipsum</p>     
+                versions of Lorem Ipsum</p>
+            </div>     
         </div>
     </div>
 <div class="container">
