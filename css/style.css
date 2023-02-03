@@ -1,5 +1,5 @@
 /*DEFAULT*/
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +18,7 @@
 } 
 
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
 }
 h1,h2 { 
@@ -56,6 +56,10 @@ h1,h2 {
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
     z-index: 1000;
+    
+}
+#scrollbtn html {
+    scroll-behavior: smooth !important;
 }
 i {
     border: solid #fff;
@@ -88,11 +92,12 @@ i {
 }
 #navbar a {
     margin: 0 40px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     text-decoration: none;
     list-style-type: none;
     color: #fff;
+    z-index: 100;
 }
 #navbar li:first-child a {
     color: #000;
@@ -101,16 +106,18 @@ i {
 #navbar a:hover {
     padding-bottom: 5px;
     border-bottom: 3px solid #EB3F22;
+    transition: .5s;
 }
 #navbar a:active {
+    display: flex;
     border-bottom: 3px solid #EB3F22;
+    transition: .5s;
 }
 
 /*DIV*/
 
 .carus {
-    height: calc(100vh - 258px);
-    
+    height: calc(100vh - 258px);    
 }
 .main {
     height: max-content;
@@ -134,6 +141,7 @@ i {
     padding-top: 50px;
     padding-left: 50px;
 }
+
 .service {
     height: calc(110vh - 258px);
     z-index: -100;
@@ -146,7 +154,6 @@ i {
     transform: translate(0%, 60%);
     background: rgba(31, 31, 31, 0.7);
     z-index: -900; 
-
 }
 .serv h1 {
     padding: 25px 25px 25px 25px;
@@ -161,29 +168,150 @@ i {
     color: #fff;
     z-index: -100;
 }
+#id {
+
+}
+
 .subscribe {
-    height: calc(120vh - 258px);
-    z-index: -100;    
+    z-index: -100;
 }
 .subs {
-    height: max-content;
-    width: 60%;
-    margin-left: 20%;
-    text-align: center;
-    transform: translate(0%, 60%);
-    background: rgba(31, 31, 31, 0.7);
-    z-index: -900; 
+    display:inline-block;
+    width: 300px;
+    padding-left: 360px;
+    padding-top: 275px;
 }
 .subs h1 {
-    padding: 25px 25px 25px 25px;
+    padding: 55px 25px 45px 25px;
     text-align: center;
-    color:#fff;
+    color: #fff;
 
 }
 .subs p {
     padding: 0 50px 45px 50px;
     text-align: center;
-    font-size: 15px;
     color: #fff;
-    z-index: -100;
+}
+.subs_d {
+    background: rgba(238, 56, 65, 0.65);
+    border-radius: 20px;
+}
+.sb_btn {
+    padding-left: 75px;
+    padding-bottom: 30px;
+}
+.sb_btn a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    background-color: #FF706F;
+    padding: 10px 30px 10px 30px;
+    border-radius: 25px;
+    transition:  .5s;
+}
+.sb_btn a:hover {
+    transition:  .5s;
+    background: #c94b4b;
+}
+.group {
+    z-index: -1000;
+}
+.gp {
+    display:inline-block;
+    width: 420px;
+    padding-left: 300px;
+    padding-top: 275px;
+}
+.gp h1 {
+    padding: 55px 25px 45px 25px;
+    text-align: center;
+    color: #fff;
+
+}
+.gp p {
+    padding: 0 50px 45px 50px;
+    text-align: center;
+    color: #fff;
+}
+.gp_d {
+    background-color: #FF706F;
+    border-radius: 20px;
+}
+#gp_r {
+    width: 200px;
+    height: 200px;
+    margin-left: 320px;
+    margin-bottom: -50px;
+    background: linear-gradient(rgba(81, 81, 81, 0.259), rgba(0, 0, 0, 0.1)),url(../img/ph_AP.jpeg);
+    background-repeat: no-repeat;
+    mix-blend-mode: normal;
+    border: 2px solid #EB3F22;
+    -moz-border-radius: 180px;
+	-webkit-border-radius: 180px;
+	border-radius: 180px;
+}
+#ab {
+    margin-left: 400px;
+    transform: translate(0%, 30%);
+    margin-bottom: 400px;
+}
+.about {
+    width: 800px;
+    height: 500px;
+    background: #FF706F;
+    border-radius: 30px;
+    padding-left: 50px;
+}
+.ab_cont {
+    padding: 50px 0 0 0px;
+}
+.form label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color:#fff;
+    top: 20px;
+}
+.form input {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FF706F;
+    border: 1px solid #ffffff;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+
+}
+.form_msg {
+    padding-left: 350px;
+    padding-bottom: -620px;
+    margin-top: -275px;
+    width: 50px;
+    height: 200px;
+}
+.form_msg input {
+    margin-bottom: -520px;
+    padding-top: -530px;
+    height: 300px;
+    width: 400px;
+    text-align: left;
+    position: relative;
+}
+.form_msg label {
+    padding-top: 200px;
+}
+.subm {
+    margin-top: 140px;
+}
+.subm input {
+    width: 175px;
+    transition:  .5s;
+
+}
+.subm input:hover {
+    transition:  .5s;
+    background: #c94b4b;
 }
